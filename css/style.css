@@ -1,0 +1,326 @@
+body{
+	padding:25px;
+	font-size:14px !important;
+	text-align:left;
+	font-family:arial;
+}
+ol{
+	list-style-type: lower-alpha !important;
+}
+ol li{
+	margin-left:18px;
+}
+.draggable-area{
+	margin-left:7%;
+	margin-right:7%;
+	margin-top:6%;
+	
+}
+.draggable-area-desc{
+	width:100%;
+}
+.draggable-area-desc textarea{
+	background-color:#F9F9F9;
+	border:0px;
+	width:100%;
+	height:100px;
+	resize:vertical;
+	padding:10px 0px 10px 0px;
+}	
+
+.about-temple-desc textarea{
+	background-color: #F9F9F9;
+	font-size: 13px;
+	line-height: 13px;
+	border: 0px;
+	width: 100%;
+	height: 200px;
+	resize: vertical;
+	padding: 10px 0px 10px 0px;
+}
+.draggable-area-upload-image{
+	height:auto;
+	margin-top:5px;
+	background-color:#DFDFDF;
+	padding:10px;
+	overflow:hidden;
+}
+.dash-border{
+	border:4px dashed rgba(0,0,0,0.2);
+	margin:0 auto;
+	padding:4% 0 3% 0;
+}
+
+.dash-border h3{
+	vertical-align:middle;
+	text-align:center;
+	color:#616161;
+	
+}
+.draggable-area input[type="button"] {
+    background-color: #F47A17;
+    text-align: center;
+    padding: 2% 8% 2% 8%;
+    margin-top: 22px;
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+.about-temple-desc{
+	background-color:#F9F9F9;
+	border:0px;
+	width:100%;
+	padding:0px;
+	resize:vertical;
+	margin:30px 0px 0px 0px;
+	color:#9D9B9C;
+	
+}
+.about-text-field{
+	padding:20px;
+}
+.list-para {
+    color: #312b26;
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+}
+textarea::placeholder {
+  font-size:18px;
+  color:#9D9B9C;
+  padding-left:20px;
+  font-family:initial;  
+}
+#uploaded-holder{
+	display:none;
+	clear: both;
+	margin-top:1%;
+}
+div.image-grid {
+    background: white;
+    width: 200px;
+    height: 270px;
+    margin: 4%;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    border: 1px solid #dadada;
+    color: #545454;
+    position: relative;
+    display: inline-block;
+}
+.image-grid img {
+    width: 160px;
+    margin: 0 auto;
+    height: 160px;
+    margin-top: 5%;
+	box-shadow: 0 0 6px rgba(2, 1, 1, 0.92);
+}
+span.closeImg {
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: url(../images/close.png) no-repeat;
+    background-size: 25px 25px;
+    margin-right: -12px;
+    margin-top: -12px;
+    top: 0;
+    right: 0;
+}
+span.closeVideo{
+	display: block;
+	position: absolute;
+    width: 25px;
+    height: 25px;
+    background: url(../images/close.png) no-repeat;
+    background-size: 25px 25px;
+    margin-right: -12px;
+    margin-top: -12px;
+	top: 0;
+    right: 0;
+}
+.draggable-area-upload-image div.count{
+	display: none;
+    border: 1px solid;
+	margin: 10px 0px;
+	padding:5px 5px 5px 45px;
+	background-repeat: no-repeat;
+	background-position: 10px center;
+	color: black;
+	background-color: #FFFFFF;
+	background-size:30px 30px;
+	right:20%;
+	left:20%;
+	position:absolute;
+}
+#dropped-files{
+	margin:0 auto;
+	text-align:center;
+	width:90%;
+}
+#imageGallery{
+	display:none;
+	border-radius:5px;
+	box-shadow: 0 0 15px #614c4c;
+	border:1px solid #dadada;
+	overflow:hidden;
+	margin-top:1%;
+}
+#videoGallery{
+	display:none;
+	margin-top:2%;
+	border-radius:5px;
+	box-shadow: 0 0 15px #614c4c;
+	border:1px solid #dadada;
+	overflow:hidden;
+}
+#videoGallery h3, #imageGallery h3 {
+    background-color: #000000;
+    border: 5px solid white;
+    border-radius: 25px;
+    padding: 1%;
+    color: white;
+}
+.loadingImg{
+	background:url(../images/loading.gif) no-repeat center center ;
+	background-size:50px 50px;
+}
+
+/* Choose files from folder*/
+
+.draggable-area .inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.draggable-area .inputfile + label {
+    font-size: 17px;
+    color: #616161;
+    background-color: #E0DEE0;
+    display: inline-block;
+	border:1px solid black;
+	padding:5px 3% 5px 3%;
+}
+.draggable-area .inputfile:focus + label, .draggable-area .inputfile + label:hover {
+    background-color: white;
+}
+.draggable-area .inputfile + label {
+	cursor: pointer; /* "hand" cursor */
+}
+.draggable-area .inputfile:focus + label {
+	outline: 1px dotted #000;
+	outline: -webkit-focus-ring-color auto 5px;
+}
+span.mid{
+	vertical-align:super;
+}
+#myButton{
+	display:none;
+	float:right;
+	border-radius: 0px; 
+	color: black;
+	padding:5px;
+	margin-bottom:3%;
+	border:none;
+	vertical-align: middle;
+	background-color: #dfdfdf;
+	font-size:17px;
+	font-weight:700;
+}
+#myButton span.plus{
+	font-weight:bold;
+	font-size:19px;
+	vertical-align: middle;
+}
+#usfileError{
+	display:none;
+	border: 1px solid;
+	margin: 10px 0px;
+	padding:15px 10px 15px 65px;
+	background-repeat: no-repeat;
+	background-position: 10px center;
+	color: black;
+	background-color: #FFFFFF;
+	background-image: url('../images/error.jpg');
+	background-size:50px 50px;
+}
+#leftImg{
+	display:block;
+	max-width:100%;
+	max-height:100%;
+	margin:auto;
+}
+.image-grid video {
+    margin-top: 5%;
+    box-shadow: 0 0 6px rgba(2, 1, 1, 0.92);
+	height:160px;
+}
+#file-name-holder{
+	border:1px solid red;
+	height:100px;
+}
+div.info {
+    background: white;
+    width: 186px;
+    margin: 0 auto;
+    border: 1px solid #9e8b8b;
+    color: black;
+    /*overflow: auto;*/
+    position: absolute;
+    bottom: 3%;
+    left: 3%;
+    text-align: center;
+	height:82px;
+}
+div.info p {
+    color: black;
+    font-size:14px;
+	text-align:left;
+	padding-left:5px;
+}
+div.info p input {
+    display: inline-block;
+    width: 50%;
+    border: none;
+    padding: 3px;
+	font-size:12px;
+}
+span.fileEdit{
+	background:url(../images/edit.png) no-repeat center center ;
+	background-size:13px 13px;
+	display:inline-block;
+	vertical-align:middle;
+	padding-left:10px;
+}
+div.info p input:disabled {
+    background-color:white;
+}
+#errValue{
+	display: none;
+	font-size: 10px;
+	color: red;
+	font-style:italic;
+}
+#txt_area_error{
+	display: none;
+	font-size: 14px;
+    background-color: #f3dede;
+    margin: 0px;
+    padding: 5px;
+	color: red;
+	font-style: italic;
+}
+#countValue{
+	display: none;
+	font-size: 14px;
+    background-color: #f3dede;
+    margin: 0px;
+    padding: 5px;
+	color: #000000;
+	font-style: italic;
+}
